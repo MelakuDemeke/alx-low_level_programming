@@ -1,0 +1,2 @@
+#!/bin/bash
+gcc -S -masm=intel -Og -fverbose-asm $CFILE -O `echo $CFILE | cut -d. -f1`.c
