@@ -2,7 +2,7 @@
 /**
  * main - starting point
  *
- * Description : prints size of various types on the computer it is compiled on anf run on
+ * Description : prints size of various tpes
  *
  * Return:  0 -> indicates ind of program
  *
