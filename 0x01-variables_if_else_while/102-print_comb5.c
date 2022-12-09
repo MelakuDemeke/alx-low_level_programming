@@ -13,19 +13,22 @@ int main(void)
 	int i;
 	int j;
 
-	for (i = 0; i < 99; i++)
+	for (i = 0; i < 100; i++)
 	{
-		for (j = 1; j < 100; j++)
+		for (j = i; j < 100; j++)
 		{
-			putchar((i / 10) + 48);
-			putchar((i % 10) + 48);
-			putchar(' ');
-			putchar((j / 10) + 48);
-			putchar((j % 10) + 48);
-			if (j != 99)
+			if ( i != j)
 			{
-				putchar(',');
+				putchar((i / 10) + 48);
+				putchar((i % 10) + 48);
 				putchar(' ');
+				putchar((j / 10) + 48);
+				putchar((j % 10) + 48);
+				if (j != 99 || i != 98)
+				{
+					putchar(',');
+					putchar(' ');
+				}
 			}
 		}
 	}
