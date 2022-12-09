@@ -4,7 +4,7 @@
 /**
  * main - starting point
  *
- * Descritpiton : determine -ve or +ve
+ * Description : determine -ve or +ve
  *
  * Return : 0 -> indicate end
  */
