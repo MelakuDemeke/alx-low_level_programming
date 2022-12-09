@@ -14,15 +14,11 @@ int main(void)
 
 	for (i = 0; i < 10; i++)
 	{
-		if (i == 9)
-		{
-			putchar(48 + i);
-		}
-		else
-		{
 		putchar(48 + i);
-		putchar(',');
-		putchar(' ');
+		if (i != 9)
+		{
+			putchar(',');
+			putchar(' ');
 		}
 	}
 	putchar('\n');
