@@ -22,6 +22,7 @@ int main(void)
 		{
 		putchar(48 + i);
 		putchar(',');
+		putchar(' ');
 		}
 	}
 	putchar('\n');
