@@ -7,18 +7,18 @@
  *
  * Return: 0-> indicate end
  */
-int main(vid)
+int main(void)
 {
-	char smallStart = 'a';
+	char smallStart;
 	char smallEnd = 'z';
-	char capStart = 'A';
+	char capStart;
 	char capEnd = 'Z';
 
-	for (smallStart; smallStart <= smallEnd; smallStart++)
+	for (smallStart = 'a'; smallStart <= smallEnd; smallStart++)
 	{
 		putchar(smallStart);
 	}
-	for (capStart; capStart <= capEnd; capStart++)
+	for (capStart = 'A'; capStart <= capEnd; capStart++)
 	{
 		putchar(capStart);
 	}
