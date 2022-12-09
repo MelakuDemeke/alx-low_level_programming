@@ -1,7 +1,7 @@
 #include<stdio.h>
 
 /**
- * main - prints hex numbers 
+ * main - prints hex numbers
  *
  * Description: prints all the numbers of base 16 in lowercase,
  * followed by a new line. which is hex
@@ -14,6 +14,7 @@ int main(void)
 	int i;
 	char alphaStart;
 	char alphaEnd = 'f';
+
 	for (i = 0; i < 10; i++)
 	{
 		putchar(48 + i);
