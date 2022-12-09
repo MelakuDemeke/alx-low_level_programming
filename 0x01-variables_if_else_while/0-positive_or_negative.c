@@ -4,9 +4,9 @@
 /**
  * main - starting point
  *
- * Description : determine -ve or +ve
+ * Description: determine -ve or +ve
  *
- * Return : 0 -> indicate end
+ * Return: 0 -> indicate end
  */
 
 int main(void)
