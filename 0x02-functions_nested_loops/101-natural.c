@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * add - add
+ * main - return sum of natural numbes
  *
  * Description: print sum of all multiple of 3 or 5 below 1024
  *
