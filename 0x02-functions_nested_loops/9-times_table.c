@@ -20,7 +20,7 @@ void times_table(void)
 		{
 			mul = (i * j);
 			_putchar(mul);
-			_putchar(', ')
+			_putchar(', ');
 		}
 		_putchar('\n')
 	}
