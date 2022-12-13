@@ -4,7 +4,7 @@
  * add - add
  *
  * Description: print sum of all multiple of 3 or 5 below 1024
- * 
+ *
  * Return: the value of the sum
  *
  */
@@ -19,6 +19,8 @@ int main(void)
 		{
 			sum = sum + i;
 		}
-		
 	}
+	printf("%d\n", sum);
+
+	return (0);
 }
