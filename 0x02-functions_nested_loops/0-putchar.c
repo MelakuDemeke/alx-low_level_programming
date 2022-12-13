@@ -1,23 +1,25 @@
 #include "main.h"
 
 /**
- * main - starting of the program
+ * main - starting point
  *
- * Description: prints _putchar
+ * Description: prints _putchar follwed by new line
  *
- * Return: 0-> endicated end
+ * Return: 0->indicates end
  *
-*/
+ */
 
 int main(void)
 {
-    char name[] = "_putchar";
-    int i;
+	char name[] = "_putchar";
+	int i;
 
-    for (i = 0; i < 8; i++){
-        _putchar(name[i]);
-    }
-    _putchar('\n');
+	for (i = 0; i < 8; i++)
+	{
+		_putchar(name[i]);
+	}
+	_putchar('\n');
 
-    return (0);
+	return (0);
+
 }
