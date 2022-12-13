@@ -11,7 +11,8 @@
 
 int main(void)
 {
-	int i, seq1 = 0, seq2 = 1, sum;
+	int i;
+	unsigned long seq1 = 0, seq2 = 1, sum;
 
 	for (i = 0; i < 50; i++)
 	{
