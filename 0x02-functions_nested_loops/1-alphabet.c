@@ -4,8 +4,8 @@
  * print_alphabet - prints alphabet a - z
  *
  * Description: when the function get called it prints a - z
- * 		using the _putchar function and put new line
- * 		at the end
+ *		using the _putchar function and put new line
+ *		at the end
  * Return: 0-> shows end void no return
  *
  */
