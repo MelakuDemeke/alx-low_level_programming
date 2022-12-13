@@ -37,7 +37,8 @@ int numLength(int n)
 int main(void)
 {
 	int i, first0s;
-	unsigned long seq1 = 1, seq2 = 2, sum, max = 100000000, first10 = 0, first20 = 0, finalSum = 0;
+	unsigned long seq1 = 1, seq2 = 2, sum, max = 100000000, first10 = 0,
+	first20 = 0, finalSum = 0;
 
 	for (i = 1; i <= 98; ++i)
 	{
