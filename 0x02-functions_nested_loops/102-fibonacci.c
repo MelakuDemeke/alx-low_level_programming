@@ -17,7 +17,7 @@ int main(void)
 	for (i = 0; i < 50; i++)
 	{
 		sum = seq1 + seq2;
-		printf("%d", sum);
+		printf("%lu", sum);
 		seq1 = seq2;
 		seq2 = sum;
 		if (i == 49)
