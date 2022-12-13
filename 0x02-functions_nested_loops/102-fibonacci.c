@@ -11,7 +11,7 @@
 
 int main(void)
 {
-	int i, seq1, seq2, sum;
+	int i, seq1 = 0, seq2 = 1, sum;
 
 	for (i = 0; i < 50; i++)
 	{
