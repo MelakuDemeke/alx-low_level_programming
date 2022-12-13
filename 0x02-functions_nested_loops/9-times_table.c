@@ -19,7 +19,7 @@ void times_table(void)
 		for (j = 0; j < 10; j++)
 		{
 			mul = (i * j);
-			if ( j != 0)
+			if (j != 0)
 			{
 				_putchar(',');
 				_putchar(' ');
@@ -29,7 +29,7 @@ void times_table(void)
 				_putchar((mul / 10) + '0');
 				_putchar((mul % 10) + '0');
 			}
-			else if ( mul < 10 && j != 0)
+			else if (mul < 10 && j != 0)
 			{
 				_putchar(' ');
 				_putchar((mul % 10) + '0');
