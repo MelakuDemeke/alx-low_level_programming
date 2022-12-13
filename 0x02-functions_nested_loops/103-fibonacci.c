@@ -12,7 +12,7 @@
 int main(void)
 {
 	unsigned long seq1 = 0, seq2 = 1, sum;
-	float finalSum;
+	float finalSum = 0;
 
 	while (1)
 	{
