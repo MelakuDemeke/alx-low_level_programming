@@ -11,19 +11,15 @@
 
 int main(void)
 {
-	unsigned long seq1 = 0, seq2 = 1, sumfinalSum;
+	unsigned long seq1 = 0, seq2 = 1, sum;
+	float finalSum;
 
 	while (1)
 	{
 		sum = seq1 + seq2;
-		if (sum > 4000000)
-		{
 			break;
-		}
 		if ((sum % 2) == 0)
-		{
 			finalSum += sum;
-		}
 		seq1 = seq2;
 		seq2 = sum;
 	}
