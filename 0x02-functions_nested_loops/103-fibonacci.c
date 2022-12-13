@@ -11,8 +11,7 @@
 
 int main(void)
 {
-	unsigned long seq1 = 0, seq2 = 1, sum;
-	float finalSum;
+	unsigned long seq1 = 0, seq2 = 1, sumfinalSum;
 
 	while (1)
 	{
@@ -28,7 +27,7 @@ int main(void)
 		seq1 = seq2;
 		seq2 = sum;
 	}
-	printf("%.0f\n", finalSum)
+	printf("%.0f\n", finalSum);
 
 	return (0);
 }
