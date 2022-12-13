@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * print_alphabet - prints alphabet a - z 10 times
+ * print_alphabet_x10 - prints alphabet a - z 10 times
  *
  * Description: when the function get called it prints a - z 10 times
  *		using the _putchar function and put new line
