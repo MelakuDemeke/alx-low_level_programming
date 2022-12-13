@@ -11,19 +11,18 @@
 
 int main(void)
 {
-	unsigned long seq1 = 0, seq2 = 1, sum;
-	float finalSum = 0;
+	int first = 0, second = 1; next = 0;
+	int sum = 0;
 
-	while (1)
+	while (next < 4000000)
 	{
-		sum = seq1 + seq2;
-			break;
-		if ((sum % 2) == 0)
-			finalSum += sum;
-		seq1 = seq2;
-		seq2 = sum;
+		next = first + second;
+		first = second;
+		second = next;
+		if (next % 2 == 0)
+			sum += next;
 	}
-	printf("%.0f\n", finalSum);
+	printf("%i\n", sum);
 
 	return (0);
 }
