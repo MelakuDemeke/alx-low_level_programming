@@ -1,3 +1,4 @@
+![](https://miro.medium.com/max/540/1*ZCZCLhtWeqc5zE9P32hc7Q.gif)
 # alx-low_level_programming
 
 - [0x00-hello_world](./0x00-hello_world/) : C - Hello, World
