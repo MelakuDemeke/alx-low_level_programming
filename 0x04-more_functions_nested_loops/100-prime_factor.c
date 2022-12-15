@@ -12,21 +12,21 @@ int main(void)
 	long int n = 612852475143;
 	long int divsor = 2, result = 0, maxFact;
 
-	while(n!=0)
+	while (n != 0)
 	{
-		if(n % divsor !=0)
+		if ((n % divsor) != 0)
 			divsor = divsor + 1;
-		else 
+		else
 		{
 			maxFact = n;
 			n = n / divsor;
-			if(n == 1)
+			if (n == 1)
 			{
-				printf("%d\n",maxFact);
+				printf("%d\n", maxFact);
 				result = 1;
 				break;
 			}
 		}
 	}
-	return 0;
+	return (0);
 }
