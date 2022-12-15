@@ -9,24 +9,13 @@
 
 int main(void)
 {
-	long int n = 612852475143;
-	long int divsor = 2, result = 0, maxFact;
+	unsigned long int i, n = 612852475143;
 
-	while (n != 0)
+	for (i = 3; i < 782849; i = i + 2)
 	{
-		if ((n % divsor) != 0)
-			divsor = divsor + 1;
-		else
-		{
-			maxFact = n;
-			n = n / divsor;
-			if (n == 1)
-			{
-				printf("%d\n", maxFact);
-				result = 1;
-				break;
-			}
-		}
+		while ((n % i == 0) && (n != i))
+			n = n / i;
 	}
+	printf("%lu\n", n);
 	return (0);
 }
