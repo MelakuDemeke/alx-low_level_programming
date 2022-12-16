@@ -15,5 +15,7 @@
 ## advanced
 - [11. prime factor finder](./100-prime_factor.c) : Write a program that finds and prints the largest prime factor of the number `612852475143`, followed by a new line.
 - [12 print intiger](./101-print_number.c) : Write a function that prints an integer.
-- [Header container](./main.h) : contain header definitions
+
+## other
+- [header](./main.h) : contain headers and function prototype
 
