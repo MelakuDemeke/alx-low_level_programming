@@ -6,3 +6,6 @@
 - [3. Leap year](./3-convert_day.c) : This program converts a date to the day of year and determines how many days are left in the year, taking leap year into consideration.
 - [print days](./3-print_remaining_days.c) :  helper for the above
 - [HEADER](./main.h) :contain the header files
+
+## other
+- [header](./main.h) : contain headers and function prototype
