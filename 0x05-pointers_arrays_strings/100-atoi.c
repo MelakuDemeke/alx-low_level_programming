@@ -4,6 +4,8 @@
 * _atoi - convert string to int
 *
 * @s: string tobe converted
+*
+* Return: converted value
 */
 
 int _atoi(char *s)
