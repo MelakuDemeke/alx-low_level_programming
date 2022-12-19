@@ -1,9 +1,10 @@
 #include "main.h"
 
 /**
-* reset_to_98 - reset value to 98
+* *_strcpy - copy string from pointer to pointer
 *
-* @n: the pointer to be updateded to 98
+* @dest: source string pointer
+* @src: destination string pointer
 *
 * Return: strcpy of the string
 */
@@ -14,7 +15,7 @@ char *_strcpy(char *dest, char *src);
 
 	for (i = 0; src[i] != '\0'; i++)
 	{
-		dest[j] =src[i];
+		dest[j] = src[i];
 		j++
 	}
 	dest[j] = '\0';
