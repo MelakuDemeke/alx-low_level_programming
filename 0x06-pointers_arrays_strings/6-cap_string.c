@@ -1,34 +1,31 @@
 #include "main.h"
 
 /**
-* cap_string - reverse array
+* cap_sing - reverse array
 *
-* @s: string to change to word upper
+* @s: sing to change to word upper
 *
-* Return: upper string
+* Return: upper sing
 */
 
-char *cap_string(char *s)
+char *cap_sing(char *s)
 {
-	int i = 0;
+int i = 0;
 
-	while (s[i] != '\0')
+	while (s[i])
 	{
-		if (s[i] == ' ' || s[i] == ';' || s[i] == '\n' || s[i] == '\t'
-		|| s[i] == '{' || s[i] == '}' || s[i] == '(' || s[i] == ')'
-		|| s[i] == ',' || s[i] == '.' || s[i] == '!' || s[i] == '?'
-		|| s[i] == '"')
-		{
-			if (s[i + 1] >= 'a' && s[i + 1] <= 'z')
-			{
-				s[i + 1] = s[i + 1] - 32;
-			}
+		while (!(s[i] >= 'a' && s[i] <= 'z'))
 			i++;
-		}
-	}
-	if (s[0] >= 'a' && s[i] <= 'z')
-	{
-		s[0] = s[0] - 32;
+
+		if (s[i - 1] == ' ' || s[i - 1] == '\t' || s[i - 1] == '\n' ||
+		    s[i - 1] == ',' || s[i - 1] == ';' || s[i - 1] == '.' ||
+		    s[i - 1] == '!' || s[i - 1] == '?' || s[i - 1] == '"' ||
+		    s[i - 1] == '(' || s[i - 1] == ')' || s[i - 1] == '{' ||
+		    s[i - 1] == '}' || i == 0)
+			{
+				s[i] -= 32;
+			}
+		i++;
 	}
 	return (s);
 }
