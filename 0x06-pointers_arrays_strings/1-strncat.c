@@ -5,6 +5,7 @@
 *
 * @dest: destination string
 * @src: starting string
+* @n: limiter
 *
 * Return: result of dest
 */
