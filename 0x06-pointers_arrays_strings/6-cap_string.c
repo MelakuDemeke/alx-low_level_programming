@@ -8,7 +8,7 @@
 * Return: upper sing
 */
 
-char *cap_sing(char *s)
+char *cap_string(char *s)
 {
 	int i = 0;
 
