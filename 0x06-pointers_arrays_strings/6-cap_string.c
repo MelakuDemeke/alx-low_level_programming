@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
-* cap_sing - reverse array
+* cap_string - reverse array
 *
 * @s: sing to change to word upper
 *
