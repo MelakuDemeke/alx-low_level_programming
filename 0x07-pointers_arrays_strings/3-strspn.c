@@ -9,7 +9,7 @@
  * Return: length of prifix substr
  */
 
-unsigned int _strsl(char *s, char *accept)
+unsigned int _strspn(char *s, char *accept)
 {
 	unsigned int i = 0, j = 0, k = 0, l;
 	int ischecked = 1;
