@@ -7,7 +7,7 @@
  * @size: size of a square matrix
  * @a: the matrix
  *
- * Return: the sum 
+ * Return: the sum
  */
 
 void print_diagsums(int *a, int size)
