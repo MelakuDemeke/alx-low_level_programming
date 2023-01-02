@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
-* _memset - fills memory with constant types
+* _memcpy - copy memory area
 *
 * @dest: destination buffer
 * @src: source to copy
