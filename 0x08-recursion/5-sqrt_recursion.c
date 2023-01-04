@@ -1,42 +1,35 @@
 #include "main.h"
 
 /**
- * find_sqare_root - find natural square root of number
+ * sqare_root - returns the power of number
  *
- * @num: number to find square root of
- * @root: root tobe tested
+ * @n: number
+ * @y: counter
  *
- * Return: sqare root of num or -1
+ * Return: square root
  */
-
-int find_sqare_root(int num, int root)
+int sqare_root(int n, int y)
 {
-	if ((root * root) == num)
-		return (root);
-
-	if (root == num / 2)
+	if (y * y == n)
+	{
+		return (y);
+	}
+	else if (y * y > n)
+	{
 		return (-1);
 
-	return (find_sqare_root(num, root + 1));
+	}
+	return (sqare_root(n, y + 1));
 }
 
 /**
-* _sqrt_recursion - returns natural square root of a number
+* _sqrt_recursion - eturns the natural square root of a number
 *
-* @n: number get the natural square root
+* @n: number
 *
-* Return: natural square root of n
+* Return: natural square root
 */
-
 int _sqrt_recursion(int n)
 {
-	int root = 0;
-
-	if (n < 0)
-		return (-1);
-
-	if (n == 1)
-		return (1);
-
-	return (find_sqare_root(n, root));
+	return (sqare_root(n, 1));
 }
