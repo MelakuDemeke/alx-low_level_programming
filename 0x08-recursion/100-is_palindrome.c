@@ -5,6 +5,8 @@
 *
 *Return: length of a string
 */
+int longitud(char *s);
+
 int longitud(char *s)
 {
 	int l = 0;
