@@ -8,6 +8,7 @@
  *
  * Return: square root
  */
+ 
 int sqare_root(int n, int y)
 {
 	if (y * y == n)
