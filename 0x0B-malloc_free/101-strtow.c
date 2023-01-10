@@ -2,9 +2,9 @@
 #include <stdlib.h>
 
 /**
-* count - Count words in a string.
-*@str: String address.
-*Return: Number of words in a string (Integer).
+* count - Count words in a string
+* @str: String address.
+* Return: Number of words
 */
 
 int count(char *str)
@@ -24,9 +24,9 @@ int count(char *str)
 }
 
 /**
- *strtow - Copy each word of a string into an array of strings(words).
- *@str: String address.
- *Return: Array of strings address.
+ * strtow - Copy each word of a string into an array of string
+ * @str: String address.
+ * Return: Array of strings address.
  */
 
 char **strtow(char *str)
