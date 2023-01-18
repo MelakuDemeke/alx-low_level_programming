@@ -3,11 +3,13 @@
 #include <string.h>
 
 /**
- * get_op_func - Find the equivalent function.
- * @s: Operand.
- * Return: Function address.
- **/
- 
+* get_op_func - Find the equivalent function
+*
+* @s: Operand
+*
+* Return: Function address
+**/
+
 int (*get_op_func(char *s))(int, int)
 {
 	op_t ops[] = {
