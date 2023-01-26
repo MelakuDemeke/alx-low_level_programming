@@ -3,10 +3,10 @@
 
 /**
  * add_node - add node at head
- * 
+ *
  * @head: head address
  * @str: address of new addition
- * 
+ *
  * Return: new address or NULL->if list_t=null
  **/
 
