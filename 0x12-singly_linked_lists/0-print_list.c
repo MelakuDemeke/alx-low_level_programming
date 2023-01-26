@@ -23,5 +23,5 @@ size_t print_list(const list_t *h)
 		i++;
 		hold = hold->next;
 	}
-	return (i)
+	return (i);
 }
