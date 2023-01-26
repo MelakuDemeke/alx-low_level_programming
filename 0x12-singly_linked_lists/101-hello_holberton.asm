@@ -7,6 +7,7 @@ main:
 	MOV rdi, 0x1
 	MOV rsi, msg
 	MOV rdx, msglength
+    SYSCALL
 
 	MOV rax, 0x3C
 	MOV rdi, 0x0
