@@ -1,9 +1,9 @@
-global _start
+global main
 
 section .tect
 
-_start:
-	MOV rac, 0x1
+main:
+	MOV rax, 0x1
 	MOV rdi, 0x1
 	MOV rsi, msg
 	MOV rdx, msglength
