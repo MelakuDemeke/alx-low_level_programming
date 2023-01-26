@@ -12,5 +12,15 @@
 
 list_t *add_node_end(list_t **head, const char *str)
 {
+	list_t *hold, *hold2;
+	unsigned int len = 0;
+
+	if (str == NULL)
+		return (NULL);
+
+	hold = malloc(sizeof(list_t));
+	if (hold == NULL)
+		return (NULL);
+
 	
 }
