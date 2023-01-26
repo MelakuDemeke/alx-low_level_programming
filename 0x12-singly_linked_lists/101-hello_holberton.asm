@@ -1,6 +1,6 @@
 global main
 
-section .tect
+section .text
 
 main:
 	MOV rax, 0x1
