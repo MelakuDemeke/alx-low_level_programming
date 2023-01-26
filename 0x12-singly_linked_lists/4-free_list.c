@@ -12,5 +12,16 @@
 
 void free_list(list_t *head)
 {
+	struct list_s *hold = NULL;
+	struct list_s *next =  NULL;
 
+	hold = head;
+	while (hold != NULL)
+	{
+		next = hold->next;
+		free(hold->str);
+		free(hold);
+		hold = next;
+	}
+	head = NULL;
 }
