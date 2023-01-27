@@ -3,10 +3,10 @@
 
 /**
  * list_len - get number of elements
- * 
+ *
  * @h: pointer to the list
- * 
- * Return: 
+ *
+ * Return: length
  */
 
 size_t list_len(const list_t *h)
