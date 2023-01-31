@@ -21,5 +21,7 @@ size_t print_listint(const listint_t *h)
 		i++;
 		hold = hold->next;
 	}
+	printf("%d\n", hold->n);
+
 	return (i);
 }
