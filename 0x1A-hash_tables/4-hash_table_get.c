@@ -8,3 +8,8 @@
  *
  * Return: value associated with element or NULL -> if key not found
  */
+
+char *hash_table_get(const hash_table_t *ht, const char *key)
+{
+
+}
