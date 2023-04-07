@@ -4,6 +4,8 @@
  * hash_table_print - Prints a hash table
  *
  * @ht: pointer to hash table
+ *
+ * Description: print key/value pair
  */
 
 void hash_table_print(const hash_table_t *ht)
