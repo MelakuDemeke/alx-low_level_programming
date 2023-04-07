@@ -160,6 +160,43 @@ void shash_table_print(const shash_table_t *ht)
 }
 
 /**
+ * add_to_sorted_list - add a node to the sorted (by key's ASCII) linked list
+ * @table: the sorted hash table
+ * @node: the node to add
+ *
+ * Return: void
+ */
+void add_to_sorted_list(shash_table_t *table, shash_node_t *node)
+{
+	shash_node_t *tmp;
+
+	if (table->shead == NULL && table->stail == NULL)
+	{
+		table->shead = table->stail = node;
+		return;
+	}
+	tmp = table->shead;
+	while (tmp != NULL)
+	{
+		if (strcmp(node->key, tmp->key) < 0)
+		{
+			node->snext = tmp;
+			node->sprev = tmp->sprev;
+			tmp->sprev = node;
+			if (node->sprev != NULL)
+				node->sprev->snext = node;
+			else
+				table->shead = node;
+			return;
+		}
+		tmp = tmp->snext;
+	}
+	node->sprev = table->stail;
+	table->stail->snext = node;
+	table->stail = node;
+}
+
+/**
  * shash_table_print_rev - print ht in revers order
  *
  * @ht: A pointer to the sorted hash table
