@@ -121,7 +121,7 @@ int shash_table_set(shash_table_t *ht, const char *key, const char *value)
  *
  * Return: key cannot be matched -> NULL, otherwise -> value with key
  */
- 
+
 char *shash_table_get(const shash_table_t *ht, const char *key)
 {
 	shash_node_t *node;
@@ -140,3 +140,53 @@ char *shash_table_get(const shash_table_t *ht, const char *key)
 
 	return ((node == NULL) ? NULL : node->value);
 }
+
+/**
+ * shash_table_print - Prints a ht
+ *
+ * @ht: A pointer to the sorted hash table
+ */
+void shash_table_print(const shash_table_t *ht)
+{
+	shash_node_t *node;
+
+	if (ht == NULL)
+		return;
+
+	node = ht->shead;
+	printf("{");
+	while (node != NULL)
+	{
+		printf("'%s': '%s'", node->key, node->value);
+		node = node->snext;
+		if (node != NULL)
+			printf(", ");
+	}
+	printf("}\n");
+}
+
+/**
+ * shash_table_print_rev - print ht in revers order
+ *
+ * @ht: A pointer to the sorted hash table
+ */
+void shash_table_print_rev(const shash_table_t *ht)
+{
+	shash_node_t *node;
+
+	if (ht == NULL)
+		return;
+
+	node = ht->stail;
+	printf("{");
+	while (node != NULL)
+	{
+		printf("'%s': '%s'", node->key, node->value);
+		node = node->sprev;
+		if (node != NULL)
+			printf(", ");
+	}
+	printf("}\n");
+}
+
+
