@@ -7,3 +7,8 @@
  *
  * Return: NULL -> if error, sorted ht -> otherwise
  */
+
+shash_table_t *shash_table_create(unsigned long int size)
+{
+	
+}
